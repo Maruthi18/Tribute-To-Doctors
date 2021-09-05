@@ -10,19 +10,85 @@
     <link rel="stylesheet" href="style.css">
 
 
+    <script>
+        function showText(id, delay) {
+            var elem = document.getElementById(id);
+            setTimeout(function () { elem.style.visibility = 'visible'; }, delay * 1000)
+        }
+        window.onload = function () {
+            showText('1', 3);
+            showText('2', 5);
+            showText('3', 8);
+            showText('4', 10);
+        }
+    </script>
+
 </head>
 <body>
 
+
+    <!-- header section -->
     <header>
-        <a href="#" class="logo">c<span class="fas fa-virus"></span>vID-19</a>
+        <a href="https://www.who.int/health-topics/coronavirus#tab=tab_1" class="logo">c<span class="fas fa-virus"></span>VID-19</a>
 
         <div id="menu" class="fas fa-bars"></div>
 
         <nav class="navbar">
             <a class = "active" href="#Home">Home</a>
-            <a href="#cases">cases</a>
+            <a href="https://www.worldometers.info/coronavirus/">cases</a>
         </nav>
     </header>
+
+
+    <!-- Home Section -->
+
+    <section class="home" id="home">
+        <div class="content">
+            <h1>Tribute To Doctors</h1>
+            <h3>Front-Line Warriors</h3>
+        </div>
+    </section>
+
+    <section class="doctors">
+        <img src="./images/doctor.jpg" align="right">
+        <strong>
+            <!-- <p id="1"  class="one" style="visibility: hidden;"><marquee  behavior="slide" width="60%" loop="1" scrollamount="10" hspace="100">Doctors all over the world are given stature next to God</marquee></p>
+            <p id="2"  class="two"style="visibility: hidden;" align="left"><marquee behavior="slide" width="60%" loop="1" scrollamount="10" hspace="100">This is because they are life savers who work tirelessly for mankind</marquee></p>
+            <p id="3" class="three" style="visibility: hidden;"><marquee behavior="slide" width="60%" loop="1" scrollamount="20" hspace="100">Being a doctor is considered one of the most sought –after professions</marquee></p>
+
+            <p id="4" class="four" style="visibility: hidden;">
+                <marquee behavior="slide" width="80%" loop="1" scrollamount="10" hspace="100">In these testing times, they have proved themselves to be heroes, role-models in their own rights and have also been
+                caled Covid warriors</marquee>
+            </p> -->
+
+            <p id="1" class="one" style="visibility: hidden;"><marquee behavior="slide" width="60%" loop="1" scrollamount="5" hspace="100">Doctors all over the world are given
+                stature next to God</marquee></p>
+
+
+            <p id="2" class="two" style="visibility: hidden;">
+                <marquee behavior="slide" width="60%" loop="1" scrollamount="5" hspace="100">This is because they are life savers who work tirelessly for mankind</marquee>
+            </p>
+
+            <p id="3" class="three" style="visibility: hidden;">
+                <marquee behavior="slide" width="60%" loop="1" scrollamount="5" hspace="100">Being a doctor is considered one of
+                    the most sought –after professions</marquee>
+            </p>
+
+            <p id="4" class="four" style="visibility: hidden;">
+                <marquee behavior="slide" width="60%" loop="1" scrollamount="5" hspace="100">Who sacrifise their life while preparing a vaccine Salute for them</marquee>
+            </p>
+
+            <nav class="nav2">
+                <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7350477/">Click Here</a>
+            </nav>
+            
+            
+        </strong>
+
+    </section>
+
+    
+    
     
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>

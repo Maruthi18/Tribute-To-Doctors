@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
 
-
+/* Header style */
 :root{
     --blue:#3c6382;
     --dark-blue:#0a3d62;
@@ -25,6 +25,12 @@
 html{
     font-size: 62.5%;
     overflow-x: hidden ;
+}
+
+section {
+    min-height: 100vh;
+    padding: 1rem 9%;
+    padding-top: 8rem;
 }
 
 header{
@@ -115,4 +121,180 @@ header .navbar a:hover{
     .fa-times{
         transform: rotate(180deg);
     }
+}
+
+
+
+/* Home Style */
+
+.home{
+    background:url(../images/home-bg.jpg) no-repeat;
+    background-size: cover ;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.home .content{
+    text-align: center;
+    padding-top: 3rem;
+}
+
+.home .content h1{
+    font-size: 5rem;
+    color: var(--blue);
+}
+
+.home .content h3{
+    font-size: 3rem;
+    color: var(--blue);
+    
+}
+
+@media (max-width:768px){
+
+    html{
+    font-size: 50%;
+    }
+
+    .home .content h1{
+        font-size: 4rem;
+    }
+
+    .home .content h3{
+        font-size: 3.0rem;
+    }
+}
+
+@media (max-width:450px){
+
+    
+
+    .home .content h1{
+        font-size: 2.5rem;
+    }
+
+    .home .content h3{
+        font-size: 1.5rem;
+    }
+}
+
+.doctors{
+    background:url(./images/background-img.jpg) no-repeat;
+    background-size: cover ;
+    background-position: center;
+    background-attachment: fixed;
+    
+}
+/* .doctors img{
+    width: 360px;
+    height: 450px;
+    
+    position:relative ;
+    top: 630px;
+    left: 900px;
+} */
+
+
+
+/* @media (max-width:768px){
+
+    .doctors img{
+        position: relative;
+        left: 180px;
+        top: 10px;
+        width: 50%;
+        height: 50%;
+    }
+} */
+
+/* .doctors p1 {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--blue);
+    left: 1cm;
+    top: 20px;
+    
+    position: relative;
+}
+.doctors p2 {
+    color: var(--blue);
+    font-size: 2rem;
+    top: 9cm;
+    left: -10cm;
+    position: relative;
+    
+}
+.doctors p3 {
+    color: var(--blue);
+    font-size: 2rem;
+    top: 9cm;
+    left: 2cm;
+    position: relative;
+    
+}
+.doctors p4 {
+    color: var(--blue);
+    font-size: 2rem;
+    top: 10cm;
+    left: 3cm;
+    position: relative;
+} */
+
+
+.doctors img{
+    width: 400px;
+    height: 500px;
+    left: 100px;
+    top: 70px;
+    position: relative;
+}
+
+.doctors .one{
+    color:var(--dark-blue);
+    font-size: 1.5rem;
+    top: 3cm;
+    position: relative;
+    behavior: alternate;
+}
+
+.two{
+    color:var(--dark-blue);
+    font-size: 1.5rem;
+    top: 4.5cm;
+    width: 100%;
+    position: relative;
+}
+
+.three{
+    color:var(--dark-blue);
+    font-size: 1.5rem;
+    top: 6cm;
+    position: relative;
+}
+
+.four{
+    color:var(--dark-blue);
+    font-size: 1.5rem;
+    top: 8cm;
+    position: relative;
+    
+}
+
+
+
+.nav2{
+    position: relative;
+    top: 400px;
+    left: 10px;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    color:var(--dark-blue);
+    
+}
+
+.nav2 a:hover{
+     background: var(--blue);
+    color: #fff;
+    box-shadow: 0 .5rem 1rem rgba(0, green, blue, .1);
+
 }
